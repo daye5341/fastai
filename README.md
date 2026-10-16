@@ -4,6 +4,16 @@
 
 - `update/manifest.json` —— FastAI「检查更新」读取的版本清单(静态 JSON)。
 
+## 命名约定
+
+以后所有东西统一用 **FastAI** 这个名称:
+
+- 应用/产品名:`FastAI`(窗口标题、关于页;程序 `FastAI-1.0.0.exe`)
+- 源码目录:`FastAI`(本机 `D:\adnify-v1.7.70\FastAI`)
+- 发布包:`FastAI-<版本>-win32-x64.zip`(如 `FastAI-1.143.0.1-win32-x64.zip`)
+- 更新仓库:本仓库 `github.com/daye5341/fastai`
+- 用户数据目录:`%APPDATA%\FastAI-1.0.0`(固定不变,升级不迁移、不丢数据)
+
 ## 清单格式
 
 ```json
@@ -21,7 +31,7 @@
 
 ## 应用侧配置
 
-FastAI 设置里 `fastai.update.manifestUrl` 指向本清单的直链:
+FastAI 设置里 `fastai.update.manifestUrl` 已预置为本清单的直链:
 
 ```
 https://raw.githubusercontent.com/daye5341/fastai/main/update/manifest.json
@@ -31,7 +41,7 @@ https://raw.githubusercontent.com/daye5341/fastai/main/update/manifest.json
 
 ## 发布新版的步骤
 
-1. 构建出新的 `VSCode-win32-x64` 目录,打包成 zip(如 `FastAI-1.143.0.1-win32-x64.zip`);
+1. 从源码目录 `FastAI` 构建出新的应用目录,打包成 zip(命名为 `FastAI-<版本>-win32-x64.zip`);
 2. 在本仓库 **Releases** 新建一个 release(标签如 `v1.143.0.1`),把 zip 作为附件上传;
 3. 把新版应用的 `product.json` 里 `fastaiUpdateVersion` 改成新号(如 `1.143.0.1`);
 4. 修改本仓库 `update/manifest.json`:version 改成同一个新号,url 改成第 2 步的附件直链;
