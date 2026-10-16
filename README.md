@@ -10,6 +10,7 @@
 
 - 应用/产品名:`FastAI`(窗口标题、关于页;程序 `FastAI-1.0.0.exe`)
 - 源码目录:`FastAI`(本机 `D:\adnify-v1.7.70\FastAI`)
+- 应用目录(构建输出,zip 解压后的文件夹名):`FastAI-win32-x64`(本机 `D:\adnify-v1.7.70\FastAI-win32-x64`)
 - 发布包:`FastAI-<版本>-win32-x64.zip`(如 `FastAI-1.143.0.1-win32-x64.zip`)
 - 更新仓库:本仓库 `github.com/daye5341/fastai`
 - 用户数据目录:`%APPDATA%\FastAI-1.0.0`(固定不变,升级不迁移、不丢数据)
