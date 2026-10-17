@@ -14,7 +14,7 @@
 发布新版流程:
 
 1. 构建新应用目录、打包 `FastAI-1.143.0.1-win32-x64.zip`;
-2. 上传到私有仓库 `fastai-private` 的 Releases(标签如 `v1.143.0.1`);
+2. 上传到私有仓库 `FastAI-source-code-and-installation-package` 的 Releases(标签如 `v1.143.0.1`);
 3. 新版应用 `product.json`:把 `fastaiUpdateVersion` 改为 `1.143.0.1`;
 4. 修改本文件:`version` 同步为 `1.143.0.1`,`url` 改为 release 附件直链;
 5. 提交推送,旧版应用启动或手动检查时即收到提示。
