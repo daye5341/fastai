@@ -1,0 +1,114 @@
+{
+	"version": 1,
+	"updatedAt": "2026-10-17",
+	"notes": "客户端伪装档案:客户端改名 / 换 ID(如 2026-06 Windsurf 并入 Devin)或 UA 版本更新时改这里,应用每天自动拉取,不用升级应用。同 id 覆盖内置档案,新 id 直接追加;应用拿不到本文件时回退内置快照 + npm 最新版本号。",
+	"profiles": [
+		{
+			"id": "claude-code",
+			"label": "Claude Code",
+			"hint": "claude-cli UA + x-app: cli",
+			"headers": {
+				"user-agent": "claude-cli/2.1.302 (external, cli)",
+				"x-app": "cli",
+				"anthropic-beta": "claude-code-20250219"
+			}
+		},
+		{
+			"id": "codex-cli",
+			"label": "Codex CLI",
+			"hint": "codex_cli_rs UA + originator(官方按 UA 版本放行新模型)",
+			"headers": {
+				"user-agent": "codex_cli_rs/0.163.0 (Windows 10.0.26100; x86_64) WindowsTerminal",
+				"originator": "codex_cli_rs"
+			}
+		},
+		{
+			"id": "chatgpt",
+			"label": "ChatGPT 桌面端",
+			"hint": "ChatGPT UA",
+			"headers": {
+				"user-agent": "ChatGPT/1.2026.163 (Windows 10; x64)"
+			}
+		},
+		{
+			"id": "cursor",
+			"label": "Cursor",
+			"hint": "Cursor UA",
+			"headers": {
+				"user-agent": "Cursor/2.2.1 (Windows NT 10.0; x64)"
+			}
+		},
+		{
+			"id": "devin",
+			"label": "Devin(原 Windsurf)",
+			"hint": "Devin-CLI UA · 2026-06 Windsurf 并入 Devin",
+			"headers": {
+				"user-agent": "Devin-CLI/2026.9.2 (Windows 10.0.26100; x86_64)"
+			}
+		},
+		{
+			"id": "windsurf",
+			"label": "Windsurf(旧名)",
+			"hint": "老中转站仍按 windsurf 识别时用;新站选上面的 Devin",
+			"headers": {
+				"user-agent": "Windsurf/2.5.0 (Windows NT 10.0; x64)"
+			}
+		},
+		{
+			"id": "cline",
+			"label": "Cline",
+			"hint": "Cline UA",
+			"headers": {
+				"user-agent": "Cline/3.46.0"
+			}
+		},
+		{
+			"id": "roo",
+			"label": "Roo Code",
+			"hint": "Roo-Code UA",
+			"headers": {
+				"user-agent": "Roo-Code/3.41.0"
+			}
+		},
+		{
+			"id": "kilo",
+			"label": "Kilo Code",
+			"hint": "Kilo-Code UA",
+			"headers": {
+				"user-agent": "Kilo-Code/4.122.0"
+			}
+		},
+		{
+			"id": "gemini-cli",
+			"label": "Gemini CLI",
+			"hint": "GeminiCLI UA",
+			"headers": {
+				"user-agent": "GeminiCLI/0.64.0 (win32; x64)"
+			}
+		},
+		{
+			"id": "kiro",
+			"label": "Kiro",
+			"hint": "Kiro UA",
+			"headers": {
+				"user-agent": "Kiro/0.9.5"
+			}
+		},
+		{
+			"id": "qwen-code",
+			"label": "Qwen Code",
+			"hint": "QwenCode UA",
+			"headers": {
+				"user-agent": "QwenCode/0.12.0 (win32; x64)"
+			}
+		},
+		{
+			"id": "opencode",
+			"label": "opencode",
+			"hint": "opencode UA",
+			"headers": {
+				"user-agent": "opencode/1.26.0"
+			}
+		}
+	]
+}
