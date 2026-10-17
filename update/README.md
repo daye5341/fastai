@@ -9,14 +9,14 @@
 - 应用侧:`fastai.update.manifestUrl` 已预置上述地址;`fastai.update.autoCheck`(默认开)= 启动后自动检查,每天最多一次;命令面板「FastAI: 检查更新」可手动检查;
 - 只提示,不自动下载、不自动安装;
 - `url` 指向成品 zip 的下载地址(在私有仓库 Releases 中,登录作者账号后可下载);
-- 版本号规则:前三段跟 VS Code 基底,第四段为 FastAI 修补序号(当前 `1.143.0.0` → 下一版 `1.143.0.1`)。
+- 版本号规则:FastAI 独立编号(逐段数字比较、缺位补 0):当前 `30.0.0`,下一版 `30.0.1`。
 
 发布新版流程:
 
-1. 构建新应用目录、打包 `FastAI-1.143.0.1-win32-x64.zip`;
-2. 上传到私有仓库 `FastAI-source-code-and-installation-package` 的 Releases(标签如 `v1.143.0.1`);
-3. 新版应用 `product.json`:把 `fastaiUpdateVersion` 改为 `1.143.0.1`;
-4. 修改本文件:`version` 同步为 `1.143.0.1`,`url` 改为 release 附件直链;
+1. 构建新应用目录、打包 `FastAI-30.0.1-win32-x64.zip`;
+2. 上传到私有仓库 `FastAI-source-code-and-installation-package` 的 Releases(标签如 `v30.0.1`);
+3. 新版应用 `product.json`:把 `fastaiUpdateVersion` 改为 `30.0.1`;
+4. 修改本文件:`version` 同步为 `30.0.1`,`url` 改为 release 附件直链;
 5. 提交推送,旧版应用启动或手动检查时即收到提示。
 
 本地测试(不动线上清单):`node serve-test.cjs`,把设置的 manifestUrl 临时改为 `http://127.0.0.1:8899/manifest.json`,执行「FastAI: 检查更新」验证,测完改回。
