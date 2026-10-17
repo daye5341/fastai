@@ -17,7 +17,7 @@
 
 ## 命名约定
 
-- 产品 / 应用:FastAI(`FastAI-1.0.0.exe`)
+- 产品 / 应用:FastAI(`FastAI.exe`)
 - 发布包:`FastAI-<版本>-win32-x64.zip`
-- 用户数据目录:`%APPDATA%\FastAI-1.0.0`
+- 用户数据目录:`%APPDATA%\FastAI`
 - 版本号:FastAI 独立编号(当前 30.0.0,下一版 30.0.1)
