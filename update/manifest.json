@@ -1,5 +1,5 @@
 {
   "version": "1.143.0.0",
-  "url": "https://github.com/daye5341/fastai/releases",
+  "url": "https://github.com/daye5341/fastai-private/releases",
   "notes": "当前发布的 FastAI 版本。发布新版时:把 version 升一档(如 1.143.0.1),并把 url 换成新版压缩包的下载地址。"
 }
